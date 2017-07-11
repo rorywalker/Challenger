@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <title>Challenger</title>
+</head>
+
+<body>
+
+    <h1 class="top"> Challenger</h1>
+
+    <table class="box">
+        <tr>
+            <td></td>
+            <td id="a1" class="spot"></td>
+            <td id="a2" class="spot"></td>
+            <td id="a3" class="spot"></td>
+            <td id="a4" class="spot"></td>
+            <td id="row1Total" class="spot norm"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="b1" class="spot"></td>
+            <td id="b2" class="spot"></td>
+            <td id="b3" class="spot"></td>
+            <td id="b4" class="spot"></td>
+            <td id="row2Total" class="spot norm"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="c1" class="spot"></td>
+            <td id="c2" class="spot"></td>
+            <td id="c3" class="spot"></td>
+            <td id="c4" class="spot"></td>
+            <td id="row3Total" class="spot norm"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td id="d1" class="spot"></td>
+            <td id="d2" class="spot"></td>
+            <td id="d3" class="spot"></td>
+            <td id="d4" class="spot"></td>
+            <td id="row4Total" class="spot norm"></td>
+        </tr>
+        <tr>
+            <td id="bottomTopDiagTotal" class="spot diag"></td>
+            <td id="colTotal1" class="spot norm"></td>
+            <td id="colTotal2" class="spot norm"></td>
+            <td id="colTotal3" class="spot norm"></td>
+            <td id="colTotal4" class="spot norm"></td>
+            <td id="topBottomDiagTotal" class="spot diag"></td>
+        </tr>
+    </table>
+
+    <button type="button" id="btnSubmit">Check Answer</button>
+
+    <div class="slider" id="slideTop">Directions</div>
+
+    <div class="slider" id="slideBottom">
+        <ul>
+            <li>Fill each square with a number, one through nine.</li>
+            <li>Numbers may be used more than once.</li>
+            <li>Horizontal squares should add to the totals on the right.</li>
+            <li>Vertial squares should add to the totals on the bottom.</li>
+            <li>Diagional squares should add to the totals in the bottom <br>left and bottom right.</li>
+            <li>There may be more than one solution.</li>
+        </ul>
+    </div>  
+
+    <div class="slider1" id="slideTop1">Example</div>
+
+    <div class="slider1" id="slideBottom1">
+        <table class="box1">
+            <tr>
+                <td></td>
+                <td id="e1" class="spot1"></td>
+                <td id="e2" class="spot1"></td>
+                <td id="e3" class="spot1"></td>
+                <td id="e4" class="spot1"></td>
+                <td id="row1Total1" class="spot1 norm1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="f1" class="spot1"></td>
+                <td id="f2" class="spot1"></td>
+                <td id="f3" class="spot1"></td>
+                <td id="f4" class="spot1"></td>
+                <td id="row2Total1" class="spot1 norm1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="g1" class="spot1"></td>
+                <td id="g2" class="spot1"></td>
+                <td id="g3" class="spot1"></td>
+                <td id="g4" class="spot1"></td>
+                <td id="row3Total1" class="spot1 norm1"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="h1" class="spot1"></td>
+                <td id="h2" class="spot1"></td>
+                <td id="h3" class="spot1"></td>
+                <td id="h4" class="spot1"></td>
+                <td id="row4Total1" class="spot1 norm1"></td>
+            </tr>
+            <tr>
+                <td id="bottomTopDiagTotal1" class="spot1 diag1"></td>
+                <td id="colTotal11" class="spot1 norm1"></td>
+                <td id="colTotal21" class="spot1 norm1"></td>
+                <td id="colTotal31" class="spot1 norm1"></td>
+                <td id="colTotal41" class="spot1 norm1"></td>
+                <td id="topBottomDiagTotal1" class="spot1 diag1"></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="slider0 hidden" id="slideTop0">Solution</div>
+
+    <div class="slider0 hidden" id="slideBottom0">
+        <table class="box-">
+            <tr>
+                <td></td>
+                <td id="q1" class="spot0"></td>
+                <td id="q2" class="spot0"></td>
+                <td id="q3" class="spot0"></td>
+                <td id="q4" class="spot0"></td>
+                <td id="row1Total0" class="spot0 norm0"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="r1" class="spot0"></td>
+                <td id="r2" class="spot0"></td>
+                <td id="r3" class="spot0"></td>
+                <td id="r4" class="spot0"></td>
+                <td id="row2Total0" class="spot0 norm0"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="s1" class="spot0"></td>
+                <td id="s2" class="spot0"></td>
+                <td id="s3" class="spot0"></td>
+                <td id="s4" class="spot0"></td>
+                <td id="row3Total0" class="spot0 norm0"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td id="t1" class="spot0"></td>
+                <td id="t2" class="spot0"></td>
+                <td id="t3" class="spot0"></td>
+                <td id="t4" class="spot0"></td>
+                <td id="row4Total0" class="spot0 norm0"></td>
+            </tr>
+            <tr>
+                <td id="bottomTopDiagTotal0" class="spot0 diag0"></td>
+                <td id="colTotal10" class="spot0 norm0"></td>
+                <td id="colTotal20" class="spot0 norm0"></td>
+                <td id="colTotal30" class="spot0 norm0"></td>
+                <td id="colTotal40" class="spot0 norm0"></td>
+                <td id="topBottomDiagTotal0" class="spot0 diag0"></td>
+            </tr>
+        </table>
+    </div>
+
+ <div id="banner" class="alert alert-inverse hidden"></div>
+
+<div id="banner1" class="alert alert-inverse hidden"></div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="app.js"></script>
+
+</body>
+
+</html>
